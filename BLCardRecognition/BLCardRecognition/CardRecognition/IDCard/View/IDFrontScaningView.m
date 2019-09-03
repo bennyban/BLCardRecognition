@@ -17,6 +17,8 @@
 // iPhone6 Plus/6s Plus/7 Plus 5.5英寸 屏幕宽高：414*736点 屏幕模式：3x 分辨率：1920*1080像素
 #define iPhone6Plusor6sPlusor7Plus ([UIScreen mainScreen].bounds.size.height == 736.0)
 
+#define iPhoneXPro ([UIScreen mainScreen].bounds.size.height == 812.0f || [UIScreen mainScreen].bounds.size.height == 896.0f)
+
 @interface IDFrontScaningView ()
 
 @property (nonatomic, strong) CAShapeLayer *IDCardScanningWindowLayer;
@@ -63,12 +65,17 @@
     _lbTitle.text = @"扫描身份证人像面";
     [self addSubview:_lbTitle];
     
+    CGFloat changePosition = 35;
+    if ([UIScreen mainScreen].bounds.size.height == 812.0f) {
+        changePosition = 25;
+    }
+    
     CGPoint center = self.center;
-    center.x = CGRectGetMaxX(_IDCardScanningWindowLayer.frame) + 35;
+    center.x = CGRectGetMaxX(_IDCardScanningWindowLayer.frame) + changePosition;
     _lbTitle.center = center;
     
     orignX = self.frame.size.width - 49;
-    orignY = 25;
+    orignY = iPhoneXPro?45:25;
     width  = 44;
     height = 44;
     
@@ -81,7 +88,7 @@
     [self addSubview:_btnLeft];
     
     orignX = self.frame.size.width - 52;
-    orignY = self.frame.size.height - 54;
+    orignY = self.frame.size.height - (iPhoneXPro?80:54);
     width  = 44;
     height = 44;
     
@@ -114,7 +121,7 @@
     // 中间包裹线
     _IDCardScanningWindowLayer = [CAShapeLayer layer];
     _IDCardScanningWindowLayer.position = self.layer.position;
-    CGFloat width = iPhone5or5cor5sorSE? 240: (iPhone6or6sor7? 265: 290);
+    CGFloat width = iPhone5or5cor5sorSE? 240: (iPhone6or6sor7? 265: (iPhoneXPro?280:290));
     _IDCardScanningWindowLayer.bounds = (CGRect){CGPointZero, {width, width * 1.574}};
     _IDCardScanningWindowLayer.cornerRadius = 15;
     _IDCardScanningWindowLayer.borderColor = [UIColor whiteColor].CGColor;

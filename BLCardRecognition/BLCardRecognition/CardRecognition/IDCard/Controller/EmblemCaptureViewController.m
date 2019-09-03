@@ -64,18 +64,28 @@
     self.view.backgroundColor = [UIColor clearColor];
     self.title = @"扫描身份证";
     
-    __weak __typeof__(self) weakSelf = self;
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"返回" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [weakSelf.navigationController popViewControllerAnimated:YES];
-    }];
-    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"模拟器没有摄像设备" message:@"请使用真机测试！！！" okAction:okAction cancelAction:nil];
-    
-    [self presentViewController:alertC animated:YES completion:nil];
+//    __weak __typeof__(self) weakSelf = self;
+//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"返回" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        [weakSelf.navigationController popViewControllerAnimated:YES];
+//    }];
+//    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"模拟器没有摄像设备" message:@"请使用真机测试！！！" okAction:okAction cancelAction:nil];
+//    
+//    [self presentViewController:alertC animated:YES completion:nil];
 }
 
 - (void)initView
 {
-    
+    __weak typeof(self) weakSelf = self;
+    // 添加自定义的扫描界面（中间有一个镂空窗口和来回移动的扫描线）
+    IDCoverScaningView *IDCardScaningView = [[IDCoverScaningView alloc] initWithFrame:self.view.frame];
+    IDCardScaningView.tag = 1006;
+    IDCardScaningView.backHandle = ^{
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    };
+    IDCardScaningView.flashHandle = ^{
+//        [weakSelf turnOnOrOffTorch];
+    };
+    [self.view addSubview:IDCardScaningView];
 }
 
 #else
