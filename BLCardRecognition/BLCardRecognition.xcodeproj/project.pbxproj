@@ -27,16 +27,16 @@
 		D843025C231D75A80061476F /* BankCardSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = D843025A231D75A80061476F /* BankCardSearch.m */; };
 		D843025F231D75E80061476F /* BankCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = D843025E231D75E80061476F /* BankCardScaningView.m */; };
 		D843027B231D77110061476F /* BankReslutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D843027A231D77110061476F /* BankReslutModel.m */; };
-		D8430280231D88D20061476F /* IDCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D843027C231D88D20061476F /* IDCardListViewController.m */; };
-		D8430281231D88D20061476F /* IDCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D843027E231D88D20061476F /* IDCardInfoViewController.m */; };
 		D85AD195231E033000D7648D /* nav_ocr_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D85AD194231E033000D7648D /* nav_ocr_back@2x.png */; };
 		D85AD198231E2B7800D7648D /* IDFrontScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85AD197231E2B7800D7648D /* IDFrontScaningView.m */; };
 		D85AD19B231E2BD200D7648D /* IDCoverScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85AD19A231E2BD200D7648D /* IDCoverScaningView.m */; };
 		D85AD1B8231E2EC100D7648D /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D85AD1B0231E2EC100D7648D /* libbankcard.a */; };
 		D85AD1B9231E2EC100D7648D /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D85AD1B3231E2EC100D7648D /* libexidcardios.a */; };
 		D85AD1BA231E2EC100D7648D /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = D85AD1B5231E2EC100D7648D /* zocr0.lib */; };
-		D85AD1BD231E2EE300D7648D /* BankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85AD1BC231E2EE300D7648D /* BankCardViewController.m */; };
 		D85AD1C0231E2F5400D7648D /* IDResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D85AD1BF231E2F5400D7648D /* IDResultModel.m */; };
+		D8E5C2CB231E507400CDC7CB /* BankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5C2CA231E507400CDC7CB /* BankCardViewController.m */; };
+		D8E5C2D0231E508000CDC7CB /* IDCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5C2CC231E508000CDC7CB /* IDCardInfoViewController.m */; };
+		D8E5C2D1231E508000CDC7CB /* IDCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5C2CE231E508000CDC7CB /* IDCardListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,10 +73,6 @@
 		D843025E231D75E80061476F /* BankCardScaningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankCardScaningView.m; sourceTree = "<group>"; };
 		D8430279231D77110061476F /* BankReslutModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankReslutModel.h; sourceTree = "<group>"; };
 		D843027A231D77110061476F /* BankReslutModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankReslutModel.m; sourceTree = "<group>"; };
-		D843027C231D88D20061476F /* IDCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardListViewController.m; sourceTree = "<group>"; };
-		D843027D231D88D20061476F /* IDCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardListViewController.h; sourceTree = "<group>"; };
-		D843027E231D88D20061476F /* IDCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardInfoViewController.m; sourceTree = "<group>"; };
-		D843027F231D88D20061476F /* IDCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardInfoViewController.h; sourceTree = "<group>"; };
 		D85AD194231E033000D7648D /* nav_ocr_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_ocr_back@2x.png"; sourceTree = "<group>"; };
 		D85AD196231E2B7800D7648D /* IDFrontScaningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDFrontScaningView.h; sourceTree = "<group>"; };
 		D85AD197231E2B7800D7648D /* IDFrontScaningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDFrontScaningView.m; sourceTree = "<group>"; };
@@ -90,10 +86,14 @@
 		D85AD1B5231E2EC100D7648D /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
 		D85AD1B6231E2EC100D7648D /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
 		D85AD1B7231E2EC100D7648D /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
-		D85AD1BB231E2EE300D7648D /* BankCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCardViewController.h; sourceTree = "<group>"; };
-		D85AD1BC231E2EE300D7648D /* BankCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankCardViewController.m; sourceTree = "<group>"; };
 		D85AD1BE231E2F5400D7648D /* IDResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDResultModel.h; sourceTree = "<group>"; };
 		D85AD1BF231E2F5400D7648D /* IDResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDResultModel.m; sourceTree = "<group>"; };
+		D8E5C2C9231E507400CDC7CB /* BankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardViewController.h; sourceTree = "<group>"; };
+		D8E5C2CA231E507400CDC7CB /* BankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardViewController.m; sourceTree = "<group>"; };
+		D8E5C2CC231E508000CDC7CB /* IDCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardInfoViewController.m; sourceTree = "<group>"; };
+		D8E5C2CD231E508000CDC7CB /* IDCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardInfoViewController.h; sourceTree = "<group>"; };
+		D8E5C2CE231E508000CDC7CB /* IDCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardListViewController.m; sourceTree = "<group>"; };
+		D8E5C2CF231E508000CDC7CB /* IDCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardListViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +132,7 @@
 				D8430174231D4B630061476F /* AppDelegate.m */,
 				D843018A231D4B800061476F /* RootViewController.h */,
 				D8430189231D4B800061476F /* RootViewController.m */,
+				D8E5C2BD231E504E00CDC7CB /* OCR */,
 				D843018C231D4C7F0061476F /* CardRecognition */,
 				D8430179231D4B630061476F /* Main.storyboard */,
 				D843017C231D4B630061476F /* Assets.xcassets */,
@@ -178,8 +179,6 @@
 		D84301A6231D4DD40061476F /* BankCard */ = {
 			isa = PBXGroup;
 			children = (
-				D85AD1BB231E2EE300D7648D /* BankCardViewController.h */,
-				D85AD1BC231E2EE300D7648D /* BankCardViewController.m */,
 				D8430259231D75A80061476F /* Search */,
 				D843024E231D74510061476F /* Controller */,
 				D843024C231D74510061476F /* Model */,
@@ -191,10 +190,6 @@
 		D84301A7231D4DD40061476F /* IDCard */ = {
 			isa = PBXGroup;
 			children = (
-				D843027F231D88D20061476F /* IDCardInfoViewController.h */,
-				D843027E231D88D20061476F /* IDCardInfoViewController.m */,
-				D843027D231D88D20061476F /* IDCardListViewController.h */,
-				D843027C231D88D20061476F /* IDCardListViewController.m */,
 				D84301A9231D4E8C0061476F /* Controller */,
 				D84301AA231D4E8C0061476F /* Model */,
 				D84301A8231D4E8C0061476F /* View */,
@@ -345,6 +340,35 @@
 			path = dicts;
 			sourceTree = "<group>";
 		};
+		D8E5C2BD231E504E00CDC7CB /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5C2BE231E504E00CDC7CB /* BankCard */,
+				D8E5C2C1231E504E00CDC7CB /* IDCard */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		D8E5C2BE231E504E00CDC7CB /* BankCard */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5C2C9231E507400CDC7CB /* BankCardViewController.h */,
+				D8E5C2CA231E507400CDC7CB /* BankCardViewController.m */,
+			);
+			path = BankCard;
+			sourceTree = "<group>";
+		};
+		D8E5C2C1231E504E00CDC7CB /* IDCard */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5C2CD231E508000CDC7CB /* IDCardInfoViewController.h */,
+				D8E5C2CC231E508000CDC7CB /* IDCardInfoViewController.m */,
+				D8E5C2CF231E508000CDC7CB /* IDCardListViewController.h */,
+				D8E5C2CE231E508000CDC7CB /* IDCardListViewController.m */,
+			);
+			path = IDCard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,17 +453,17 @@
 				D85AD1C0231E2F5400D7648D /* IDResultModel.m in Sources */,
 				D84301CD231D63910061476F /* EmblemCaptureViewController.m in Sources */,
 				D85AD19B231E2BD200D7648D /* IDCoverScaningView.m in Sources */,
-				D8430280231D88D20061476F /* IDCardListViewController.m in Sources */,
 				D84301D0231D63C10061476F /* PortraitCaptureViewController.m in Sources */,
-				D8430281231D88D20061476F /* IDCardInfoViewController.m in Sources */,
 				D843027B231D77110061476F /* BankReslutModel.m in Sources */,
 				D8430198231D4C8F0061476F /* RectManager.m in Sources */,
+				D8E5C2D0231E508000CDC7CB /* IDCardInfoViewController.m in Sources */,
 				D84301A4231D4D990061476F /* UIImage+Extend.m in Sources */,
 				D8430175231D4B630061476F /* AppDelegate.m in Sources */,
-				D85AD1BD231E2EE300D7648D /* BankCardViewController.m in Sources */,
+				D8E5C2CB231E507400CDC7CB /* BankCardViewController.m in Sources */,
 				D84301A5231D4D990061476F /* UIAlertController+Extend.m in Sources */,
 				D843018B231D4B800061476F /* RootViewController.m in Sources */,
 				D85AD198231E2B7800D7648D /* IDFrontScaningView.m in Sources */,
+				D8E5C2D1231E508000CDC7CB /* IDCardListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
