@@ -10,4 +10,14 @@
 
 @implementation BankReslutModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.bankNumber = @"";
+        self.bankName = @"";
+    }
+    return self;
+}
+
 @end

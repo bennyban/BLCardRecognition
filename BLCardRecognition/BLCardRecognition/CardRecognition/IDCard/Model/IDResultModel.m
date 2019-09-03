@@ -10,6 +10,22 @@
 
 @implementation IDResultModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _type = 1;
+        self.num = @"";
+        self.name = @"";
+        self.gender = @"";
+        self.nation = @"";
+        self.address = @"";
+        self.issue = @"";
+        self.valid = @"";
+    }
+    return self;
+}
+
 /*
 - (BOOL)isEqual:(IDInfo *)idInfo {
     if (idInfo == nil) {
